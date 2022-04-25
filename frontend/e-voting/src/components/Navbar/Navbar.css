@@ -1,0 +1,40 @@
+
+ .navbar {
+    background-color: white;
+}
+
+
+.nav-main-container h1{
+    font-size: 40pt !important;
+}
+
+
+
+@media only screen and (min-width: 992px){
+    .navbar .nav-main-container {
+        padding-left: 10rem !important;
+        padding-right: 3rem !important;
+    }
+    .nav-main-container #nav-login-link{
+        margin-left: 7rem;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .navbar .nav-main-container {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .nav-main-container .navbar-brand{
+        padding-left: 4rem;
+    }
+}
+
+
+.nav-link{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
