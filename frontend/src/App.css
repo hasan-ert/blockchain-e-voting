@@ -18,6 +18,13 @@
   background-color: white;
 }
 
+.App {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-image: url("https://img.freepik.com/free-photo/orange-watercolor-brush-stroke-background_1017-24500.jpg?w=2000");
+}
+
 .row {
   margin-right: 0  !important;
   margin-left: 0  !important;
@@ -42,8 +49,8 @@ h6 {
   font-weight: 500;
 }
 
-h1{
-  font-size: 50pt !important;
+body h1{
+  font-size: 40pt;
 }
 
 p {

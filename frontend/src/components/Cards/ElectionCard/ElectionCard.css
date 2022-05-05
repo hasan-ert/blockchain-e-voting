@@ -1,0 +1,64 @@
+.election-section .election-card-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+    text-decoration: none;
+}
+
+.election-card-wrapper .election-card{
+    position: relative;
+    width: 100%;
+    background-color: var(--fixed-primary-color);
+    color: var(--fixed-primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.election-card-wrapper .election-card:hover{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.election-card h3{
+    z-index: 2;
+}
+
+.election-card::after{
+    content: "";
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: var(--fixed-primary-color);
+    transition: 0.5s;
+}
+
+.election-card:hover::after{
+    width: 50%;
+    background-color: var(--fixed-secondary-color);
+}
+.election-card::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: var(--fixed-primary-color);
+    transition: 0.5s;
+}
+
+.election-card:hover::before{
+    width: 50%;
+    background-color: var(--fixed-secondary-color);
+}

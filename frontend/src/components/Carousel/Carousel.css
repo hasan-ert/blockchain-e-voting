@@ -1,0 +1,28 @@
+.carousel-wrapper{
+    text-align: center;
+}
+
+
+.custom-carousel{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+ .custom-carousel .carousel-control-prev{
+  
+    justify-content: flex-start;
+}
+ .custom-carousel .carousel-control-next{
+    justify-content: flex-end;
+}
+
+.custom-carousel .carousel-control-next-icon{
+    background-color: var(--fixed-secondary-color);
+    height: 100% !important;
+    opacity: 1;
+}
+.custom-carousel .carousel-control-prev-icon{
+    background-color: var(--fixed-secondary-color);
+    height: 100% !important;
+    opacity: 1;
+}

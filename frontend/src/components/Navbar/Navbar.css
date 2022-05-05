@@ -1,11 +1,16 @@
 
  .navbar {
-    background-color: white;
+    background-color: var(--fixed-primary-color);
+    
 }
 
+.nav-main-container{
+    
+}
 
-.nav-main-container h1{
-    font-size: 40pt !important;
+.nav-main-container h2{
+    color: var(--fixed-primary-text-color) !important;
+    font-size: 32pt !important;
 }
 
 
@@ -34,6 +39,7 @@
 
 
 .nav-link{
+    color: var(--fixed-primary-text-color) !important;
     margin-left: 2rem;
     margin-right: 2rem;
 }

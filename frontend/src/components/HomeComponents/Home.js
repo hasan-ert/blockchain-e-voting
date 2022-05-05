@@ -8,6 +8,8 @@ import "./css/Home.css";
 
 //Image import
 import envelope from "../../assets/pngwing.com.png";
+import ElectionCard from "../Cards/ElectionCard/ElectionCard";
+import CustomCarousel from "../Carousel/Carousel";
 
 export default function Home() {
   return (
@@ -50,6 +52,35 @@ export default function Home() {
             </Col>
           </Row>
         </div>
+      </Container>
+
+      <Container fluid>
+        <CustomCarousel
+          title="Latest Elections"
+          items={[
+            <Container fluid>
+              <Row>
+                <Container className="election-section">
+                  <ElectionCard></ElectionCard>
+                  <ElectionCard></ElectionCard>
+                  <ElectionCard></ElectionCard>
+                </Container>
+              </Row>
+              <Row>
+                <Container className="election-section">
+                  <ElectionCard></ElectionCard>
+                  <ElectionCard></ElectionCard>
+                  <ElectionCard></ElectionCard>
+                </Container>
+              </Row>
+            </Container>,
+            <Container className="election-section">
+              <ElectionCard></ElectionCard>
+              <ElectionCard></ElectionCard>
+              <ElectionCard></ElectionCard>
+            </Container>,
+          ]}
+        ></CustomCarousel>
       </Container>
     </div>
   );

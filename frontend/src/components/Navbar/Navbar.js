@@ -11,7 +11,7 @@ export default function NavigationBar() {
     <Navbar sticky="top" expand="lg">
       <Container fluid className="nav-main-container">
         <NavbarBrand>
-          <h1>EVote</h1>
+          <h2>EVote</h2>
         </NavbarBrand>
         <NavbarToggle aria-controls="nav-collapse" />
         <NavbarCollapse id="nav-collapse">
@@ -20,19 +20,19 @@ export default function NavigationBar() {
             style={{ paddingRight: "2rem", paddingLeft: "2rem" }}
           >
             <Nav.Link as={Link} to={"/"}>
-              <h4>Home</h4>
+              <h5>Home</h5>
             </Nav.Link>
             <Nav.Link as={Link} to={"/elections"}>
-              <h4>Ongoing Elections</h4>
+              <h5>Ongoing Elections</h5>
             </Nav.Link>
             <Nav.Link as={Link} to={"/newelection"}>
-              <h4>Start Election</h4>
+              <h5>Start Election</h5>
             </Nav.Link>
             <Nav.Link as={Link} id="nav-login-link" to={"/login"}>
-              <h4>Login</h4>
+              <h5>Login</h5>
             </Nav.Link>
             <Nav.Link as={Link} to={"/signup"}>
-              <h4>Signup</h4>
+              <h5>Signup</h5>
             </Nav.Link>
           </Nav>
         </NavbarCollapse>
