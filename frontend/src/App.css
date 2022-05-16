@@ -1,6 +1,7 @@
 :root{
   --fixed-primary-color: #3d5a80;
   --fixed-secondary-color: #ee6c4d ;
+  --fixed-secondary-dark-color: #e06849 ;
   --fixed-outline-color: #293241;
   --fixed-primary-text-color: white;
   --fixed-secondary-text-color: white;
@@ -22,7 +23,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
-  background-image: url("https://img.freepik.com/free-photo/orange-watercolor-brush-stroke-background_1017-24500.jpg?w=2000");
+  
 }
 
 .row {
@@ -47,6 +48,7 @@ h5,
 h6 {
   font-family:  "Poppins", sans-serif;
   font-weight: 500;
+  margin-bottom: 0 !important;
 }
 
 body h1{

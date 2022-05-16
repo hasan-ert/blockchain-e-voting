@@ -12,6 +12,37 @@ import ElectionCard from "../Cards/ElectionCard/ElectionCard";
 import CustomCarousel from "../Carousel/Carousel";
 
 export default function Home() {
+  const dummy = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+  const ElectionSection = (elections) => {
+    return (
+      <Container className="election-section">
+        {elections.map(function (item) {
+          return <ElectionCard></ElectionCard>;
+        })}
+      </Container>
+    );
+  };
+  const createElectionSectionArray = () => {
+    var electionSections = [];
+    if (Array.isArray(dummy) && dummy.length > 0) {
+      var tempElectionsData = [];
+      for (var i = 0; i < dummy.length; i++) {
+        tempElectionsData.push(dummy[i]);
+        if (window.screen.width > 500) {
+          if ((i + 1) % 3 === 0) {
+            electionSections.push(ElectionSection(tempElectionsData));
+            tempElectionsData = [];
+          }
+        } else {
+          electionSections.push(ElectionSection(tempElectionsData));
+          tempElectionsData = [];
+        }
+      }
+    }
+    return electionSections;
+  };
+
   return (
     <div>
       <Container fluid className="home-main-container">
@@ -57,29 +88,7 @@ export default function Home() {
       <Container fluid>
         <CustomCarousel
           title="Latest Elections"
-          items={[
-            <Container fluid>
-              <Row>
-                <Container className="election-section">
-                  <ElectionCard></ElectionCard>
-                  <ElectionCard></ElectionCard>
-                  <ElectionCard></ElectionCard>
-                </Container>
-              </Row>
-              <Row>
-                <Container className="election-section">
-                  <ElectionCard></ElectionCard>
-                  <ElectionCard></ElectionCard>
-                  <ElectionCard></ElectionCard>
-                </Container>
-              </Row>
-            </Container>,
-            <Container className="election-section">
-              <ElectionCard></ElectionCard>
-              <ElectionCard></ElectionCard>
-              <ElectionCard></ElectionCard>
-            </Container>,
-          ]}
+          items={createElectionSectionArray()}
         ></CustomCarousel>
       </Container>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //Css Import
 import "./Carousel.css";
 export default function CustomCarousel({ items, title, subtitle }) {
@@ -27,6 +28,16 @@ export default function CustomCarousel({ items, title, subtitle }) {
           interval={null}
           activeIndex={index}
           onSelect={handleSelect}
+          prevIcon={
+            <img src="https://icones.pro/wp-content/uploads/2021/06/symbole-fleche-gauche-orange.png"></img>
+          }
+          nextIcon={
+            <img
+              src={
+                "https://icones.pro/wp-content/uploads/2021/06/symbole-fleche-droite-orange.png"
+              }
+            ></img>
+          }
           className="custom-carousel"
         >
           {createCarouselItems()}

@@ -2,24 +2,56 @@
     text-align: center;
 }
 
-
-.custom-carousel{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+@media only screen and (min-width:990px){
+    .custom-carousel{
+        margin: 3rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }    
 }
 
+@media only screen and (max-width:990px){
+    .custom-carousel .carousel-control-prev,
+    .custom-carousel .carousel-control-next{
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+    }
+}
+.custom-carousel{
+    margin:0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+
+.custom-carousel .carousel-inner{
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
  .custom-carousel .carousel-control-prev{
-  
+     margin:auto;
     justify-content: flex-start;
+    width: auto;
 }
  .custom-carousel .carousel-control-next{
+    margin: auto;
     justify-content: flex-end;
+    width: auto;
+    height: 50px;
+    width:40px;
 }
 
 .custom-carousel .carousel-control-next-icon{
     background-color: var(--fixed-secondary-color);
     height: 100% !important;
     opacity: 1;
+}
+
+.custom-carousel .carousel-control-next img,
+.custom-carousel .carousel-control-prev img{
+    height: 50px;
+    width: 50px;
 }
 .custom-carousel .carousel-control-prev-icon{
     background-color: var(--fixed-secondary-color);

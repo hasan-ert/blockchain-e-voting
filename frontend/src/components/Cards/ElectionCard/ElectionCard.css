@@ -4,6 +4,7 @@
     justify-content: center;
     margin: 2rem;
     text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .election-card-wrapper .election-card{
@@ -44,7 +45,7 @@
 }
 
 .election-card:hover::after{
-    width: 50%;
+    width: 51%;
     background-color: var(--fixed-secondary-color);
 }
 .election-card::before{
@@ -59,6 +60,6 @@
 }
 
 .election-card:hover::before{
-    width: 50%;
+    width: 51%;
     background-color: var(--fixed-secondary-color);
 }
