@@ -1,0 +1,29 @@
+.candidate-card-wrapper{
+    display: flex;
+    margin: 1rem;
+    padding: 2rem;
+    border: 5px solid var(--fixed-secondary-color);
+}
+
+.candidate-card-wrapper .candidate-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.candidate-card h3{
+    text-align: center;
+}
+
+.candidate-card-wrapper .candidate-card .candidate-img{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  border-radius: 100%;
+  border: 3px solid var(--fixed-primary-color);
+  margin: auto;
+  padding: 1rem;
+  color: var(--fixed-primary-color);
+  margin-bottom: 1.5rem;
+}
