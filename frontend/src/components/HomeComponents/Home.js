@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 //Component imports
 import { Container, Row, Col, Button } from "react-bootstrap";
@@ -10,8 +10,16 @@ import "./css/Home.css";
 import envelope from "../../assets/pngwing.com.png";
 import ElectionCard from "../Cards/ElectionCard/ElectionCard";
 import CustomCarousel from "../Carousel/Carousel";
+import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
+  const [winSize, setWinSize] = useState(window.innerWidth > 500 ? "lg" : "sm");
+  window.addEventListener("resize", () => {
+    if (window.innerWidth <= 500) setWinSize("sm");
+    else if (window.innerWidth < 990) setWinSize("md");
+    else setWinSize("lg");
+  });
+
   const dummy = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
   const ElectionSection = (elections) => {
@@ -29,8 +37,13 @@ export default function Home() {
       var tempElectionsData = [];
       for (var i = 0; i < dummy.length; i++) {
         tempElectionsData.push(dummy[i]);
-        if (window.screen.width > 500) {
+        if (winSize === "lg") {
           if ((i + 1) % 3 === 0) {
+            electionSections.push(ElectionSection(tempElectionsData));
+            tempElectionsData = [];
+          }
+        } else if (winSize === "md") {
+          if ((i + 1) % 2 === 0) {
             electionSections.push(ElectionSection(tempElectionsData));
             tempElectionsData = [];
           }
@@ -62,9 +75,11 @@ export default function Home() {
                 rutrum felis. Quisque molestie, enim nec sagittis suscipit, ex
               </h5>
               <div className="button-toolbar">
-                <Button className="custom-btn-primary">Join Voting</Button>
-                <Button className="custom-btn-primary">
-                  Start an Election
+                <Button
+                  className="custom-btn-primary"
+                  style={{ width: "150px" }}
+                >
+                  Join Voting
                 </Button>
               </div>
             </Col>
@@ -85,7 +100,7 @@ export default function Home() {
         </div>
       </Container>
 
-      <Container fluid>
+      <Container>
         <CustomCarousel
           title="Latest Elections"
           items={createElectionSectionArray()}

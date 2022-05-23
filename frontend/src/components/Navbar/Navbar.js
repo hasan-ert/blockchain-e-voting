@@ -11,7 +11,9 @@ export default function NavigationBar() {
     <Navbar sticky="top" expand="lg">
       <Container fluid className="nav-main-container">
         <NavbarBrand>
-          <h2>EVote</h2>
+          <a href={"/"} style={{ textDecoration: "none" }}>
+            <h2>EVote</h2>
+          </a>
         </NavbarBrand>
         <NavbarToggle aria-controls="nav-collapse" />
         <NavbarCollapse id="nav-collapse">

@@ -10,23 +10,21 @@ import {
 
 export default function FooterNew() {
   return (
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 about-col">
+    <footer className="site-footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 about-col">
             <h6>About</h6>
-            <p class="text-justify">
-              Foodversy.com is <i>ONE-STOP SHOP</i> for food and agricultural
-              products. System is developed with 27 years of experience,
-              certified producers, updated market informations, unique place for
-              marketplace, quick commerce, reliable supply chain, well organized
-              logistic solutions.
+            <p className="text-justify">
+              EVote is an electronic voting platform which uses blockchain
+              technology. It aims to provide precise and secure environment for
+              elections.
             </p>
           </div>
 
-          <div class="col-xs-6 col-md-3">
+          <div className="col-xs-6 col-md-3">
             <h6>Legal</h6>
-            <ul class="footer-links">
+            <ul className="footer-links">
               <li>
                 <a href="">Terms</a>
               </li>
@@ -36,9 +34,9 @@ export default function FooterNew() {
             </ul>
           </div>
 
-          <div class="col-xs-6 col-md-3">
+          <div className="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
-            <ul class="footer-links">
+            <ul className="footer-links">
               <li>
                 <a href="/home">Home</a>
               </li>
@@ -59,34 +57,34 @@ export default function FooterNew() {
         </div>
         <hr />
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 col-sm-6 col-xs-12">
+            <p className="copyright-text">
               Copyright &copy; 2022 All Rights Reserved by
               <a href="#"> Socratech</a>.
             </p>
           </div>
 
-          {/* <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
+          {/* <div className="col-md-4 col-sm-6 col-xs-12">
+            <ul className="social-icons">
               <li>
-                <a class="facebook" href="#">
+                <a className="facebook" href="#">
                   <FontAwesomeIcon icon={faFacebook} />
                 </a>
               </li>
               <li>
-                <a class="twitter" href="https://twitter.com/FoodFromTurkey">
+                <a className="twitter" href="https://twitter.com/FoodFromTurkey">
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
               <li>
-                <a class="dribbble" href="https://www.instagram.com/foodversy/">
+                <a className="dribbble" href="https://www.instagram.com/foodversy/">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li>
-                <a class="linkedin" href="#">
+                <a className="linkedin" href="#">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>

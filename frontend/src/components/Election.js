@@ -31,8 +31,14 @@ export default function Election() {
       <Row>
         {dummy.map(function (candidate) {
           return (
-            <Col style={{ display: "flex", justifyContent: "center" }}>
-              <CandidateCard name={candidate.name}></CandidateCard>
+            <Col
+              key={candidate.name}
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <CandidateCard
+                key={candidate.name}
+                name={candidate.name}
+              ></CandidateCard>
             </Col>
           );
         })}
