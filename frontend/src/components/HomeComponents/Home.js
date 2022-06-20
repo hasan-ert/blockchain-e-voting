@@ -99,12 +99,12 @@ export default function Home() {
         </div>
       </Container>
 
-      <Container>
+      {/* <Container>
         <CustomCarousel
           title="Latest Elections"
           items={createElectionSectionArray()}
         ></CustomCarousel>
-      </Container>
+      </Container> */}
     </div>
   );
 }
