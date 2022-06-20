@@ -6,17 +6,24 @@ import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 //Css Import
 import "./ElectionCard.css";
-export default function ElectionCard({ electionInfo }) {
+export default function ElectionCard({ electionInfo, id }) {
   const [electionDetails, setElectionDetails] = useState({
     name: "Deneme",
     url: "",
     electionId: 0,
   });
 
+  useEffect(() => {
+    setElectionDetails({
+      name: electionInfo,
+      url: "",
+      electionId: id,
+    });
+  }, [electionInfo, id]);
   return (
     <Container
       as={Link}
-      to={electionDetails.url}
+      to={"/election/" + id}
       className="election-card-wrapper"
     >
       <div className="election-card">

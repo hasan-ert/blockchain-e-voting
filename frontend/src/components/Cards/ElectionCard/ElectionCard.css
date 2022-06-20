@@ -1,6 +1,10 @@
+.election-section{
+    display: flex;
+    justify-content: center;
+}
 .election-section .election-card-wrapper{
     display: flex;
-    width: 100%;
+    width: 320px;
     justify-content: center;
     margin: 2rem;
     text-decoration: none;

@@ -65,19 +65,18 @@ export default function Home() {
               <h1>Welcome to EVote</h1>
               <h2>Start an election or join one!</h2>
               <h5 style={{ marginTop: "2rem" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus sed enim non dui suscipit facilisis. Suspendisse
-                lectus risus, consectetur quis bibendum ut, elementum non massa.
-                Quisque vitae augue arcu. In pulvinar rutrum tempor. Fusce
-                sodales ligula at ipsum fermentum, id porta eros sollicitudin.
-                Integer feugiat, ligula interdum molestie facilisis, lacus felis
-                blandit enim, commodo consequat ante eros ut ante. Nullam vitae
-                rutrum felis. Quisque molestie, enim nec sagittis suscipit, ex
+                EVote is an electronic voting platform which uses blockchain
+                technology. It aims to provide precise and secure environment
+                for elections. The blockchain based architecture ensure the
+                safety of elections as well as anonmity of the users. This is a
+                prototype of the EVote where admin can create elections and
+                users can vote for the candidate of their choice.
               </h5>
               <div className="button-toolbar">
                 <Button
                   className="custom-btn-primary"
                   style={{ width: "150px" }}
+                  href={"/all-elections"}
                 >
                   Join Voting
                 </Button>

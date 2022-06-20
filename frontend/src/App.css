@@ -63,11 +63,11 @@ p {
 
 
 body .custom-btn-primary {
-  width: 120px;
+ 
   margin: 1rem;
   background-color: var(--fixed-secondary-color);
   color: var(--fixed-secondary-text-color);
-    font-size: 16pt;
+    font-size: 10pt;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
